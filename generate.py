@@ -23,12 +23,10 @@ data = {
     'Middle Name': middle_names,
     'Organization': organizations,
     'Work Phone': work_phones,
-    'Personal Phone': personal_phones,
-    'Code': codes
+    'Personal Phone': personal_phones
 }
 df = pd.DataFrame(data)
 df['Work Phone'] = df['Work Phone'].astype(str)
-# Сохранение DataFrame в CSV
 csv_filename = "data.csv"
 df.to_csv(csv_filename, index=False)
 
